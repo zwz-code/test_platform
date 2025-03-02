@@ -590,7 +590,7 @@ class RSAS:
 本系统端口扫描的实现方法是利用nmap 扫描器进行直接调用，python有封装好的nmap库。指定了目标IP地址后，系统正式工作，IP传入后台对目标进行扫描，扫描完成后将开放端口和对应服务显示到前端界面上。为了提高了扫描的效率，本系统引入多线程扫描机制。
 
 ### 实现效果
-[!image](https://github.com/zwz-code/test_platform/blob/master/picture/portscan.png)
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/portscan.png)
 
 
 ### 详细实现
@@ -623,7 +623,7 @@ def run(self, ip):  #多线程扫描
 该功能集成Dirsearch进行开发，Dirsearch主要用于对 Web 服务器进行目录和文件枚举。 扫描的结果通过 JSON的格式保存在对应的路径下。获取的数据被分成 URL 和 TIMR，URL下又分为 content-length、path、redirect、starus四个部分。因为在 JSON 格式中被不同类型括号的数据会被 Django 解析为列表、字典等格式，因此我们需要对获得的 JSON 数据进行处理，将其转换为 Django 可以识别的数据，使之在前端进行读取。
 
 ### 实现效果
-[!image](https://github.com/zwz-code/test_platform/blob/master/picture/dirscan.png)
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/dirscan.png)
 
 
 
