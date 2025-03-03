@@ -40,8 +40,12 @@
 #### 实现效果
 流量模板新建：
 ![image](https://github.com/zwz-code/test_platform/blob/master/picture/upload.png)
+
+
 任务队列编辑下发
 ![image](https://github.com/zwz-code/test_platform/blob/master/picture/huifang.png)
+
+
 查看已经下发的任务状态
 ![image](https://github.com/zwz-code/test_platform/blob/master/picture/task.png)
 #### 详细实现
