@@ -38,9 +38,12 @@
 该功能主要是针对上传的pcap包进行预处理和回放流量，该功能可以准确执行回放真实流量和协议仿真，通过回放Pcap包进行攻防验证。此外，通过Celery异步任务队列管理多任务并发执行。通过以上功能搭建一套靶场回放系统。
 
 #### 实现效果
-
+流量模板新建：
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/upload.png)
+任务队列编辑下发
 ![image](https://github.com/zwz-code/test_platform/blob/master/picture/huifang.png)
-
+查看已经下发的任务状态
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/task.png)
 #### 详细实现
 
 Pcap包回放功能需要集成tcpreplay工具，并使用预处理工具（如 `tcprewrite` 或 `Scapy`）修改 `.pcap` 文件后再进行回放。此外使用Celery和redis实现异步任务队列进行多任务下发管理，
