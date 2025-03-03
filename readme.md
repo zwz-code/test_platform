@@ -39,6 +39,7 @@
 
 #### 实现效果
 流量模板新建：
+
 ![image](https://github.com/zwz-code/test_platform/blob/master/picture/upload.png)
 
 
