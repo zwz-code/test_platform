@@ -305,9 +305,10 @@ app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 > 该功能主要是对目标URI进行web安全漏洞扫描，漏洞扫描功能是基于调用 AWVS 13 或者RSAS和Xrap三种扫描工具，三者均采用对提供的API接口进行二次开发，用户下发扫描任务可以选择扫描工具。此外，还有一些web漏洞是基于基于脚本模拟网络请求实现。根据漏洞形成的原因，生成一些测试 payload 发送到目标系统，再由返回的状态码和数据来判断payload是否有效。
 
 ### 实现效果
-
-
-
+扫描结果展示
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/scan2.jpg)
+扫描结果细节展示
+![image](https://github.com/zwz-code/test_platform/blob/master/picture/scan1.jpg)
 ### 详细实现
 
 基于AWVS的漏洞扫描检测 ： 
